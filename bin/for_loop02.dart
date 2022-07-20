@@ -1,4 +1,4 @@
-int func(List<int> numbers) {
+
 /*
    Given a list of numbers, return the sum of the numbers at even index in the list
 Args:
@@ -6,7 +6,15 @@ Args:
 Return: 
   Int: answer
 */
-  return 0;
-}
 
-void main() {}
+int func(List<int> x){
+    int s=0;
+    int l=x.length;
+    for(int i=0; i<l; i+=2){
+            s+=x[i];
+    }
+    return s;
+}
+void main(){
+    print(func(<int>[1,2,3,4,5,6]));
+}
