@@ -1,4 +1,4 @@
-int func(List<int> numbers, int k, int n) {
+
 /*
    Given the list of numbers, return the sum of the numbers between k and n in the list
 Args:
@@ -8,7 +8,13 @@ Args:
 Return: 
   Int: answer
 */
-  return 0;
+  int func(List<int> x,int n,int m){
+    int a=0;
+    for(int i=n; i<m; i+=1){
+         a+=x[i];
+    }
+    return a;
 }
-
-void main() {}
+void main(){
+    print(func(<int>[1,2,3,4,5,6,7],0,3));
+}
